@@ -74,6 +74,7 @@ INSTALLED_APPS = [
 
     # Local apps
     'account',
+    'post',
 ]
 
 MIDDLEWARE = [
