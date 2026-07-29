@@ -1,6 +1,8 @@
+
 from django.db import models
 import uuid
 from account.models import User
+from django.utils.timesince import timesince
 
 # Create your models here.
 
@@ -28,6 +30,16 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='posts')
+
+
+    class Meta:
+        ordering = ['-created_at']
+
+    def created_by_formatted(self):
+
+
+        return timesince(self.created_at) + " ago"
+          
 
     
 
