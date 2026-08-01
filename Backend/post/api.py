@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 
-from Backend.account.models import User
-from Backend.account.serializers import UserSerializer
+from account.models import User
+from account.serializers import UserSerializer
 
 from .models import Post
 from . serializers import PostSerializer

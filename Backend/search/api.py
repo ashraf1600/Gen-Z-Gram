@@ -1,8 +1,8 @@
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
-from Backend.post.models import Post
-from Backend.post.models import Post
-from Backend.post.serializers import PostSerializer
+from post.models import Post
+from post.models import Post
+from post.serializers import PostSerializer
 from account.models import User
 from account.serializers import UserSerializer
 
